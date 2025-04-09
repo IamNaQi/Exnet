@@ -1,0 +1,50 @@
+{
+    "os": "Windows-11-10.0.22631-SP0",
+    "python": "3.12.0",
+    "heartbeatAt": "2024-04-02T18:54:02.937601",
+    "startedAt": "2024-04-02T18:52:31.100389",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "-e",
+        "10"
+    ],
+    "state": "running",
+    "program": "D:\\Thesis\\Pytorch-UNet-master\\Pytorch-UNet-master\\train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "host": "Naqi",
+    "username": "IamNa",
+    "executable": "C:\\Users\\IamNa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2304.0,
+        "min": 0.0,
+        "max": 2304.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2304.0,
+            "min": 0.0,
+            "max": 2304.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 292.96715545654297,
+            "used": 175.2287483215332
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+            "memory_total": 6442450944
+        }
+    ],
+    "memory": {
+        "total": 15.747272491455078
+    }
+}

@@ -1,0 +1,51 @@
+INFO: Starting training:
+        Epochs:          10
+        Batch size:      1
+        Learning rate:   1e-05
+        Training size:   62
+        Validation size: 6
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: False
+Epoch 1/10:   0%|                                                                              | 0/62 [00:00<?, ?img/s][34m[1mwandb[39m[22m: Network error resolved after 0:01:28.822487, resuming normal operation.
+
+
+
+
+Epoch 1/10:  19%|█████████▍                                       | 12/62 [00:19<00:27,  1.83img/s, loss (batch)=0.545]
+
+Epoch 1/10:  19%|█████████▍                                       | 12/62 [00:29<02:02,  2.44s/img, loss (batch)=0.545]
+Traceback (most recent call last):
+  File "C:\Users\IamNa\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\dataloader.py", line 1133, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\IamNa\AppData\Local\Programs\Python\Python312\Lib\queue.py", line 179, in get
+    raise Empty
+_queue.Empty
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "D:\Thesis\Pytorch-UNet-master\Pytorch-UNet-master\train.py", line 213, in <module>
+    train_model(
+  File "D:\Thesis\Pytorch-UNet-master\Pytorch-UNet-master\train.py", line 142, in train_model
+    val_score = evaluate(model, val_loader, device, amp)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\IamNa\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Thesis\Pytorch-UNet-master\Pytorch-UNet-master\evaluate.py", line 16, in evaluate
+    for batch in tqdm(dataloader, total=num_val_batches, desc='Validation round', unit='batch', leave=False):
+  File "C:\Users\IamNa\AppData\Local\Programs\Python\Python312\Lib\site-packages\tqdm\std.py", line 1182, in __iter__
+    for obj in iterable:
+  File "C:\Users\IamNa\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\dataloader.py", line 631, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\IamNa\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\dataloader.py", line 1329, in _next_data
+    idx, data = self._get_data()
+                ^^^^^^^^^^^^^^^^
+  File "C:\Users\IamNa\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\dataloader.py", line 1285, in _get_data
+    success, data = self._try_get_data()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\IamNa\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\dataloader.py", line 1146, in _try_get_data
+    raise RuntimeError(f'DataLoader worker (pid(s) {pids_str}) exited unexpectedly') from e
+RuntimeError: DataLoader worker (pid(s) 3808, 1516, 2468, 17376, 17340, 5148) exited unexpectedly
