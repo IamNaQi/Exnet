@@ -1,6 +1,6 @@
-# 🧠 EXNet: An Improved U-Net Architecture for Accurate Sperm Segmentation
+# EXNet: An Improved U-Net Architecture for Accurate Sperm Segmentation
 
-This repository contains the official implementation of **EXNet**, a deep learning model proposed in Chapter 3 of the thesis:
+This repository contains the official implementation of **EXNet**, a deep learning model proposed:
 > 📘 _Automated Deep Learning based Sperm Segmentation and Morphological Analysis for Enhancing Male Infertility Diagnosis_  
 > Author: NAQY 
 > University of Science and Technology of China (USTC)
