@@ -2,7 +2,7 @@
 
 This repository contains the official implementation of **EXNet**, a deep learning model proposed in Chapter 3 of the thesis:
 > 📘 _Automated Deep Learning based Sperm Segmentation and Morphological Analysis for Enhancing Male Infertility Diagnosis_  
-> Author: [Your Name]  
+> Author: Naqy ul hassan  
 > University of Science and Technology of China (USTC)
 
 ---
